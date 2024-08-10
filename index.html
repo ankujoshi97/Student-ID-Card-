@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+     <div class="box box1">
+      <h2 class="title">Student Id Card</h2>
+     <form>
+      <div class="filed">
+        <label for="101">SCHOOL NAME :</label>
+        <input type="text" id="101" placeholder="school name">
+        </div>
+
+       <div class="filed">
+        <label for="102">STUDENT NAME :</label>
+        <input type="text" id="102" placeholder="student name">
+        </div>
+                
+        <div class="filed">
+        <label for="103">CLASS :</label>
+         <input type="text" id="103" placeholder="class">
+         </div>
+
+         <div class="filed">
+         <label for="104">ROLL NUMBER :</label>
+         <input type="number" id="104" placeholder="3545">
+        </div>
+
+        <div class="filed">
+         <label for="105">DOB:</label>
+         <input type="date" id="105" placeholder="date of birth">
+         </div>
+
+         <div class="filed">
+         <label for="106">CONTACT NUMBER:</label>
+         <input type="number" id="106" placeholder="9999999999">
+        </div>
+
+        <button class="btn" type="button" onclick="updateCard();">SUBMIT</button>
+        <button class="btn" type="reset">CLEAR ALL</button>
+        </form>
+        </div>
+        <div class="box box2">
+        <h2 class="title">Student Id Card</h2>
+        <div class="imgContainer"><img src="./student photo.avif" alt="student photo"> </div>
+            
+            <form>
+            <div class="filed">
+                <label>SCHOOL NAME :</label>
+                <label id="schoolNameVal"></label>  
+            </div>
+
+            <div class="filed">
+                <label>STUDENT NAME :</label>
+                <label id="studentNameVal"></label>  
+            </div>
+
+            <div class="filed">
+                <label>CLASS:</label>
+                <label id="classVal"></label>  
+            </div>
+
+            <div class="filed">
+                <label>ROLL NUMBER :</label>
+                <label id="rollNumberVal"></label>  
+            </div>
+
+            <div class="filed">
+                <label>DOB :</label>
+                <label id="dobVal"></label>  
+            </div>
+
+            <div class="filed">
+                <label>CONTACT NUMBER :</label>
+                <label id="contactNumberVal"></label>  
+            </div>
+            
+            <button class="print" type="button" onclick="printIdCard()">PRINT ID CARD</button>
+        </div>
+    </form>
+    </div>
+
+  <script src="script.js"></script>  
+</body>
+</html>
